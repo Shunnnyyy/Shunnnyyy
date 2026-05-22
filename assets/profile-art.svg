@@ -1,0 +1,122 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Animated abstract profile pattern</title>
+  <desc id="desc">A calm animated grid of lines, dots, and soft waves for a GitHub profile README.</desc>
+  <style>
+    :root {
+      --ink: #0f172a;
+      --blue: #2563eb;
+      --teal: #14b8a6;
+      --rose: #e11d48;
+      --muted: #94a3b8;
+      --paper: #f8fafc;
+    }
+
+    .wave {
+      stroke-dasharray: 18 18;
+      animation: flow 16s linear infinite;
+    }
+
+    .pulse {
+      transform-origin: center;
+      animation: pulse 4.8s ease-in-out infinite;
+    }
+
+    .float-a {
+      animation: floatA 7s ease-in-out infinite;
+    }
+
+    .float-b {
+      animation: floatB 8s ease-in-out infinite;
+    }
+
+    .scan {
+      animation: scan 9s ease-in-out infinite;
+    }
+
+    @keyframes flow {
+      to { stroke-dashoffset: -144; }
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: .42; transform: scale(1); }
+      50% { opacity: .9; transform: scale(1.06); }
+    }
+
+    @keyframes floatA {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-14px); }
+    }
+
+    @keyframes floatB {
+      0%, 100% { transform: translateX(0); }
+      50% { transform: translateX(18px); }
+    }
+
+    @keyframes scan {
+      0%, 100% { transform: translateX(-70px); opacity: 0; }
+      20%, 80% { opacity: .22; }
+      50% { transform: translateX(70px); opacity: .36; }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --ink: #e2e8f0;
+        --paper: #020617;
+        --muted: #64748b;
+      }
+    }
+  </style>
+
+  <rect width="1200" height="360" rx="28" fill="var(--paper)"/>
+  <path d="M0 278 C155 224 244 320 393 260 C545 198 642 276 774 214 C921 145 1019 208 1200 136" stroke="var(--muted)" stroke-width="1.5" opacity=".28"/>
+  <path class="wave" d="M-24 252 C136 174 267 310 426 224 C579 141 698 260 854 176 C986 105 1084 148 1224 94" stroke="var(--blue)" stroke-width="3" stroke-linecap="round" opacity=".7"/>
+  <path class="wave" style="animation-delay:-4s" d="M-16 312 C123 240 276 346 417 286 C572 220 699 318 848 246 C995 175 1079 232 1216 174" stroke="var(--teal)" stroke-width="3" stroke-linecap="round" opacity=".55"/>
+
+  <g opacity=".34">
+    <path d="M80 64 H1120" stroke="var(--muted)" stroke-width="1"/>
+    <path d="M80 124 H1120" stroke="var(--muted)" stroke-width="1"/>
+    <path d="M80 184 H1120" stroke="var(--muted)" stroke-width="1"/>
+    <path d="M80 244 H1120" stroke="var(--muted)" stroke-width="1"/>
+    <path d="M160 32 V328" stroke="var(--muted)" stroke-width="1"/>
+    <path d="M320 32 V328" stroke="var(--muted)" stroke-width="1"/>
+    <path d="M480 32 V328" stroke="var(--muted)" stroke-width="1"/>
+    <path d="M640 32 V328" stroke="var(--muted)" stroke-width="1"/>
+    <path d="M800 32 V328" stroke="var(--muted)" stroke-width="1"/>
+    <path d="M960 32 V328" stroke="var(--muted)" stroke-width="1"/>
+  </g>
+
+  <g class="scan">
+    <rect x="536" y="32" width="128" height="296" rx="64" fill="url(#scanGradient)"/>
+  </g>
+
+  <g class="float-a">
+    <circle cx="258" cy="105" r="46" fill="var(--blue)" opacity=".1"/>
+    <circle class="pulse" cx="258" cy="105" r="10" fill="var(--blue)"/>
+    <path d="M258 105 L354 170 L456 128" stroke="var(--blue)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity=".76"/>
+  </g>
+
+  <g class="float-b">
+    <circle cx="858" cy="102" r="52" fill="var(--teal)" opacity=".12"/>
+    <circle class="pulse" style="animation-delay:-1.2s" cx="858" cy="102" r="11" fill="var(--teal)"/>
+    <path d="M720 168 L858 102 L1010 138" stroke="var(--teal)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity=".78"/>
+  </g>
+
+  <g>
+    <circle class="pulse" style="animation-delay:-2s" cx="533" cy="224" r="8" fill="var(--rose)"/>
+    <circle cx="533" cy="224" r="34" fill="var(--rose)" opacity=".08"/>
+    <path d="M456 128 L533 224 L720 168" stroke="var(--rose)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity=".54"/>
+  </g>
+
+  <g fill="var(--ink)">
+    <text x="80" y="88" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" opacity=".9">Shunnnyyy</text>
+    <text x="80" y="116" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" opacity=".52">build / learn / polish / ship</text>
+  </g>
+
+  <defs>
+    <linearGradient id="scanGradient" x1="536" y1="32" x2="664" y2="328" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2563eb" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#2563eb"/>
+      <stop offset="1" stop-color="#14b8a6" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+</svg>
