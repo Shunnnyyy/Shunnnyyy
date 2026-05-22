@@ -37,27 +37,12 @@ Backend     Node.js, APIs, data flow, automation
 Tools       Git, GitHub, VS Code, AI coding tools
 ```
 
-## Projects
-
-| Project | Description | Status |
-| --- | --- | --- |
-| Project One | A polished app, tool, or experiment worth showing first | Building |
-| Project Two | A practical project that solves a real problem | Planning |
-| Project Three | A smaller idea, learning log, or creative demo | Exploring |
-
 ## Principles
 
 - Make the useful path obvious.
 - Prefer simple code that can grow.
 - Polish the details people actually touch.
 - Learn in public and improve in small loops.
-
-## GitHub
-
-<p>
-  <img height="160" src="https://github-readme-stats.vercel.app/api?username=Shunnnyyy&show_icons=true&theme=default&hide_border=true&rank_icon=github" alt="Shunnnyyy GitHub stats" />
-  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Shunnnyyy&layout=compact&theme=default&hide_border=true" alt="Shunnnyyy top languages" />
-</p>
 
 ## Contact
 
